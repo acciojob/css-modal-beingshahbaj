@@ -1,1 +1,61 @@
 /*  your css code here. If applicable */
+
+        .modal {
+            display: none; 
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0, 0, 0, 0.5); th opacity */
+        }
+        
+        .modal-content {
+            background-color: #fefefe;
+            margin: 20% auto; /* 20% from the top and centered horizontally */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; 
+        }
+        
+        .modal-header {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .modal-header h2 {
+            margin: 0;
+        }
+        
+        .modal-body p {
+            margin: 0;
+        }
+        
+        .close-modal {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+       
+        @keyframes modalFadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        
+        @keyframes modalFadeOut {
+            from {opacity: 1;}
+            to {opacity: 0;}
+        }
+        
+        .modal.fade-in {
+            animation: modalFadeIn 0.3s;
+        }
+        
+        .modal.fade-out {
+            animation: modalFadeOut 0.3s;
+        }
